@@ -10,6 +10,7 @@ twig
 edge
 
 ## Future Plans
+- Better support for `x-data` syntax.
 - Support AlpineJs `properties` and `methods`
 
 ## Credit

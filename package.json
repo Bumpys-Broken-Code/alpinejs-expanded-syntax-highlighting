@@ -1,47 +1,51 @@
 {
-  	"name": "alpinejs-syntax-highlight",
-	"displayName": "Alpine.js Syntax Highlight",
-	"description": "Javascript syntax highlighting for Alpine.js x- attributes",
-	"author": "Greg Ransons",
-	"license": "MIT",
-	"version": "1.0.1",
-	"icon": "assets/alpine_logo.png",
-	"publisher": "sperovita",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/Sperovita/alpinejs-syntax-highlight.git"
-	},
-	"keywords": [
-		"alpine",
-		"alpinejs",
-		"alpine.js"
-	],
-	"engines": {
-		"vscode": "^1.63.0"
-	},
-	"categories": [
-		"Programming Languages"
-	],
-	"contributes": {
-		"languages": [
-			{
-			  "id": "inline-alpinejs"
-			}
-		],
-		"grammars": [
-			{
-				"language": "inline-alpinejs",
-				"path": "./syntaxes/injection.json",
-				"scopeName": "html.alpinejs.attribute",
-				"injectTo": [
-					"text.html.derivative", 
-					"text.html.php", 
-					"text.html.twig"
-				],
-				"embeddedLanguages": {
-					"meta.embedded.inline.alpinejs": "javascript"
-				}
-			}
-		]
-	}
+    "name": "alpinejs-expanded-syntax-highlighting",
+    "displayName": "Alpine.js Syntax Highlight",
+    "description": "Javascript syntax highlighting for Alpine.js x- attributes",
+    "author": "Tim Dodge",
+    "license": "MIT",
+    "version": "1.0.1",
+    "icon": "assets/alpine_logo.png",
+    "publisher": "bumpy",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Bumpys-Broken-Code/alpinejs-expanded-syntax-highlighting"
+    },
+    "keywords": [
+        "alpine",
+        "alpinejs",
+        "alpine.js",
+        "twig",
+        "php",
+        "edge"
+    ],
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "inline-alpinejs"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "inline-alpinejs",
+                "path": "./syntaxes/injection.json",
+                "scopeName": "html.alpinejs.attribute",
+                "injectTo": [
+                    "text.html.derivative", 
+                    "text.html.php", 
+                    "text.html.twig",
+                    "text.html.edge"
+                ],
+                "embeddedLanguages": {
+                    "meta.embedded.inline.alpinejs": "javascript"
+                }
+            }
+        ]
+    }
 }
